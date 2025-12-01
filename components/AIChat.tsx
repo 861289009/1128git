@@ -7,7 +7,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { streamCozeResponse } from '../services/cozeService';
+import { streamCozeResponse, callCozeCompletions } from '../services/cozeService';
 import { ChatMessage } from '../types';
 
 interface AIChatProps {
@@ -168,33 +168,43 @@ const AIChat: React.FC<AIChatProps> = ({
       }, 20);
     };
 
-    await streamCozeResponse(
-      input,
-      (chunk) => {
-        // Update typing target and start typewriter if needed
-        typingTargetRef.current = chunk || '';
-        startTyping();
-      },
-      () => {
-        setIsLoading(false);
-        typingDoneRef.current = true;
-        onFinishThinking?.();
-      },
-      (error) => {
-        console.error(error);
-        setMessages(prev => {
-          const newMessages = [...prev];
-          const lastMsg = newMessages[newMessages.length - 1];
-          if (lastMsg.role === 'model') {
-            lastMsg.text += "\n[Connection Interrupted]";
-          }
-          return newMessages;
-        });
-        typingDoneRef.current = true;
-        setIsLoading(false);
-        onFinishThinking?.();
-      }
-    );
+    // Prefer v1 completions for final result; fall back to SSE stream
+    try {
+      const finalText = await callCozeCompletions(input);
+      typingTargetRef.current = finalText || '';
+      startTyping();
+    } catch (e) {
+      await streamCozeResponse(
+        input,
+        (chunk) => {
+          typingTargetRef.current = chunk || '';
+          startTyping();
+        },
+        () => {
+          setIsLoading(false);
+          typingDoneRef.current = true;
+          onFinishThinking?.();
+        },
+        (error) => {
+          console.error(error);
+          setMessages(prev => {
+            const newMessages = [...prev];
+            const lastMsg = newMessages[newMessages.length - 1];
+            if (lastMsg.role === 'model') {
+              lastMsg.text += "\n[Connection Interrupted]";
+            }
+            return newMessages;
+          });
+          typingDoneRef.current = true;
+          setIsLoading(false);
+          onFinishThinking?.();
+        }
+      );
+    } finally {
+      // Ensure loading state is cleared if completions succeeded
+      setIsLoading(false);
+      typingDoneRef.current = true;
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

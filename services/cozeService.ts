@@ -139,3 +139,46 @@ export const sendCozeMessage = async (message: string): Promise<string> => {
   const data = await resp.json();
   return data?.content || '';
 };
+
+// Coze v1 chat completions (non-stream) via Netlify function, or direct fallback
+export const callCozeCompletions = async (question: string): Promise<string> => {
+  // Prefer Netlify function if available
+  try {
+    const resp = await fetch('/.netlify/functions/cozeCompletions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ question }),
+    });
+    if (resp.ok) {
+      const data = await resp.json();
+      return data?.content || '';
+    }
+  } catch (_) {
+    // fall through to direct
+  }
+
+  // Direct call (development only); token from Vite env
+  const token = String(((import.meta as any)?.env?.VITE_COZE_AUTH_TOKEN || '')).trim();
+  const BOT_ID = String(((import.meta as any)?.env?.VITE_COZE_BOT_ID || '7578805227093442595'));
+  const USER_ID = String(((import.meta as any)?.env?.VITE_COZE_USER_ID || 'RootUser_2102399258'));
+  const bearer = token.replace(/^Authorization:\s*Bearer\s*/i, '').replace(/^Bearer\s*/i, '').trim();
+
+  const resp = await fetch('https://api.coze.cn/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${bearer}`,
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      bot_id: BOT_ID,
+      user_id: USER_ID,
+      stream: false,
+      messages: [{ role: 'user', content: question }],
+    }),
+  });
+  const result = await resp.json();
+  if (resp.ok && result?.code === 0) {
+    return result?.data?.choices?.[0]?.message?.content || '';
+  }
+  throw new Error(`Coze v1 error ${resp.status}: ${result?.msg || ''}`);
+};
