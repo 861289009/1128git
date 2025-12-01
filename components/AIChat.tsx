@@ -132,18 +132,6 @@ const AIChat: React.FC<AIChatProps> = ({
           const newMessages = [...prev];
           const lastMsg = newMessages[newMessages.length - 1];
           if (lastMsg.role === 'model') {
-            // If the chunk is the full content (which it seems to be based on user description),
-            // we might want to replace. But usually streaming means deltas.
-            // However, if the API sends full content each time, we should replace.
-            // Let's assume standard streaming (deltas) first. 
-            // If it behaves weirdly (repeating text), we switch to replace.
-            // Wait, the user said "content : ...". If that's the full answer, I should replace.
-            // But if it's a stream, usually it's deltas.
-            // Let's try appending first. If it duplicates, I'll fix it.
-            // Actually, for safety with unknown stream behavior, let's look at the example again.
-            // The example was a single JSON. If stream=true, we get multiple.
-            // The Coze API sends the full content in each event during streaming, not deltas.
-            // So we must replace the text, not append.
             lastMsg.text = chunk;
           }
           return newMessages;
@@ -152,7 +140,7 @@ const AIChat: React.FC<AIChatProps> = ({
       },
       () => {
         setIsLoading(false);
-        onFinishThinking?.(); // Trigger finished state
+        onFinishThinking?.();
       },
       (error) => {
         console.error(error);
@@ -165,7 +153,7 @@ const AIChat: React.FC<AIChatProps> = ({
           return newMessages;
         });
         setIsLoading(false);
-        onFinishThinking?.(); // Trigger finished state (even on error)
+        onFinishThinking?.();
       }
     );
   };

@@ -4,16 +4,17 @@
  */
 
 const COZE_API_URL = 'https://api.coze.cn/v3/chat';
-// Prefer environment variable; fallback to the provided token
-const RAW_AUTH_TOKEN = (process.env.COZE_AUTH_TOKEN || '').trim() ||
-  'cztei_lYwGb4b98GwyMzBAcDJOOPobx1hV28EBCbRi8Mew1XrgiwbZXygt2pdAec12vUX79';
+// Prefer client env (Vite) variable; fallback to new provided token
+// Use VITE_ prefix for client-side env injection
+const RAW_AUTH_TOKEN = ((import.meta as any)?.env?.VITE_COZE_AUTH_TOKEN || '').trim() ||
+  'pat_l5ZS2NZ6en25hrnAtwGLQR2PAgaN90stRCnMeJka07HUVVD4ogSoie0AlpOuGXf9';
 // Accept inputs like "Authorization: Bearer <token>" or "Bearer <token>" or just "<token>"
 const AUTH_TOKEN = RAW_AUTH_TOKEN
   .replace(/^Authorization:\s*Bearer\s*/i, '')
   .replace(/^Bearer\s*/i, '')
   .trim();
-const BOT_ID = (process.env.COZE_BOT_ID || '7577668337417879592');
-const WORKFLOW_ID = (process.env.COZE_WORKFLOW_ID || '7577668574502191104');
+const BOT_ID = ((import.meta as any)?.env?.VITE_COZE_BOT_ID || '7577668337417879592');
+const WORKFLOW_ID = ((import.meta as any)?.env?.VITE_COZE_WORKFLOW_ID || '7577668574502191104');
 
 export interface CozeMessage {
   role: string;
@@ -28,6 +29,25 @@ export const streamCozeResponse = async (
   onComplete: () => void,
   onError: (error: Error) => void
 ) => {
+  // 优先尝试同源的 Netlify 函数代理（本地 404 时会自动回退）
+  if (typeof window !== 'undefined') {
+    try {
+      const resp = await fetch('/.netlify/functions/cozeProxy', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message }),
+      });
+      if (resp.ok) {
+        const data = await resp.json();
+        const content = data?.content || '';
+        onChunk(content);
+        onComplete();
+        return;
+      }
+    } catch (_) {
+      // ignore and fall back to direct SSE
+    }
+  }
   try {
     const response = await fetch(COZE_API_URL, {
       method: 'POST',
@@ -104,4 +124,18 @@ export const streamCozeResponse = async (
     console.error('Coze Stream Error:', error);
     onError(error instanceof Error ? error : new Error('Unknown error'));
   }
+};
+
+// Non-stream helper for environments that always use proxy
+export const sendCozeMessage = async (message: string): Promise<string> => {
+  const resp = await fetch('/.netlify/functions/cozeProxy', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message }),
+  });
+  if (!resp.ok) {
+    throw new Error(`Proxy error ${resp.status}`);
+  }
+  const data = await resp.json();
+  return data?.content || '';
 };

@@ -2,6 +2,9 @@
   command = "npm run build"
   publish = "dist"
 
+[functions]
+  directory = "netlify/functions"
+
 [[headers]]
   for = "/assets/*"
   [headers.values]
@@ -11,4 +14,3 @@
   for = "/*.html"
   [headers.values]
     Cache-Control = "no-cache, must-revalidate"
-
