@@ -58,7 +58,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, pdfUrl }) =>
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center p-4 border-b">
-              <h3 className="text-lg font-bold">Resume</h3>
+              <h3 className="text-lg font-bold">简历</h3>
               <button onClick={onClose} className="p-2 rounded-full hover:bg-gray-100">
                 <X size={24} />
               </button>
@@ -67,7 +67,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, pdfUrl }) =>
               {isImage ? (
                 <img
                   src={pdfUrl}
-                  alt="Resume"
+                  alt="简历"
                   className="max-h-full max-w-full w-auto h-auto object-contain mx-auto cursor-zoom-in"
                   onClick={() => setZoomOpen(true)}
                 />
@@ -76,7 +76,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, pdfUrl }) =>
                   src={pdfUrl}
                   width="100%"
                   height="100%"
-                  title="Resume"
+                  title="简历"
                   className="border-none"
                 />
               )}
@@ -158,7 +158,7 @@ const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, pdfUrl }) =>
               animate={{ scale: scale, x: translate.x, y: translate.y }}
               exit={{ scale: 0.95 }}
               src={pdfUrl}
-              alt="Resume Preview"
+              alt="简历预览"
               className={`max-w-[95vw] max-h-[95vh] object-contain ${scale > 1 ? 'cursor-grab' : 'cursor-zoom-out'}`}
             />
           </motion.div>

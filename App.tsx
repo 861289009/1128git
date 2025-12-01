@@ -336,10 +336,10 @@ function App() {
             transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
           >
             {/* Duplicate content for seamless loop */}
-            {[0, 1].map((key) => (
-              <div key={key} className="flex whitespace-nowrap shrink-0">
+            {[0, 1].map((loopIdx) => (
+              <div key={`marquee-loop-${loopIdx}`} className="flex whitespace-nowrap shrink-0">
                 {[...Array(4)].map((_, i) => (
-                  <span key={i} className="text-3xl md:text-7xl font-heading font-black px-8 flex items-center gap-4">
+                  <span key={`marquee-item-${loopIdx}-${i}`} className="text-3xl md:text-7xl font-heading font-black px-8 flex items-center gap-4">
                     <span className="tracking-wider md:tracking-[0.12em]">Portfolio 2025</span> <span className="text-white text-2xl md:text-4xl">●</span>
                     AIGC DESIGNER <span className="text-white text-2xl md:text-4xl">●</span>
                   </span>

@@ -126,7 +126,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           <div className="relative h-full">
             <AnimatePresence initial={false} custom={direction} mode="popLayout">
               <motion.div
-                key={currentIndex}
+                key={`slide-${currentIndex}`}
                 custom={direction}
                 variants={slideVariants}
                 initial="enter"
@@ -163,7 +163,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
 
                     <div className="space-y-6 md:space-y-8">
                       {currentSlide.features.map((feature, i) => (
-                        <div key={i} className="flex items-start gap-6">
+                        <div key={`${feature.title}-${i}`} className="flex items-start gap-6">
                           <div className="p-4 rounded-2xl bg-black/5 backdrop-blur-md border border-black/5">
                             <feature.icon className="w-6 h-6 text-black" />
                           </div>
@@ -175,14 +175,14 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                                   {feature.table.columnWidths && (
                                     <colgroup>
                                       {feature.table.headers.map((_, idx) => (
-                                        <col key={idx} style={{ width: feature.table?.columnWidths?.[idx] || 'auto' }} />
+                                        <col key={`col-${idx}-${feature.table?.headers?.[idx] ?? ''}`} style={{ width: feature.table?.columnWidths?.[idx] || 'auto' }} />
                                       ))}
                                     </colgroup>
                                   )}
                                   <thead className="bg-white/60">
                                     <tr>
                                       {feature.table.headers.map((h, idx) => (
-                                        <th key={idx} className="px-3 py-2 text-left font-bold tracking-wide text-black/70">
+                                        <th key={`head-${idx}-${h}`} className="px-3 py-2 text-left font-bold tracking-wide text-black/70">
                                           {h}
                                         </th>
                                       ))}
@@ -190,9 +190,9 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
                                   </thead>
                                   <tbody>
                                     {feature.table.rows.map((row, rIdx) => (
-                                      <tr key={rIdx} className="odd:bg-white/40 even:bg-white/30">
+                                      <tr key={`row-${rIdx}-${row.join('|')}`} className="odd:bg-white/40 even:bg-white/30">
                                         {row.map((cell, cIdx) => (
-                                          <td key={cIdx} className="px-3 py-2 whitespace-nowrap">
+                                          <td key={`cell-${rIdx}-${cIdx}-${cell}`} className="px-3 py-2 whitespace-nowrap">
                                             {cell}
                                           </td>
                                         ))}
@@ -258,7 +258,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3 z-30">
             {slides.map((_, index) => (
               <button
-                key={index}
+                key={`dot-${index}`}
                 onClick={() => {
                   setDirection(index > currentIndex ? 1 : -1);
                   setCurrentIndex(index);
@@ -297,7 +297,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
               <div className="space-y-6 md:space-y-8">
                 {features.map((feature, i) => (
                   <motion.div
-                    key={i}
+                    key={`${feature.title}-${i}`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -394,7 +394,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
               <div className="space-y-4">
                 {features.map((feature, i) => (
                   <motion.div
-                    key={i}
+                    key={`${feature.title}-${i}`}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: i * 0.1 }}
