@@ -1,8 +1,8 @@
 // Test script for Coze API
 const COZE_API_URL = 'https://api.coze.cn/v3/chat';
-const AUTH_TOKEN = 'cztei_q89RVrMU6FXnsQjDdTOiqEVMSRK6ce11iQB2KnUTzjvxWPzM5O1ASDFF4aVIsabDV';
-const BOT_ID = '7577668337417879592';
-const WORKFLOW_ID = '7577668574502191104';
+const AUTH_TOKEN = 'pat_l5ZS2NZ6en25hrnAtwGLQR2PAgaN90stRCnMeJka07HUVVD4ogSoie0AlpOuGXf9';
+const BOT_ID = '7578805227093442595';
+const USER_ID = 'RootUser_2102399258';
 
 async function testCozeAPI() {
     console.log('Testing Coze API...\n');
@@ -16,8 +16,7 @@ async function testCozeAPI() {
             },
             body: JSON.stringify({
                 bot_id: BOT_ID,
-                workflow_id: WORKFLOW_ID,
-                user_id: '123456789',
+                user_id: USER_ID,
                 stream: true,
                 additional_messages: [
                     {

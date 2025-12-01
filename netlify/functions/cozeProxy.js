@@ -28,8 +28,8 @@ exports.handler = async (event) => {
       .replace(/^Bearer\s*/i, '')
       .trim();
 
-    const BOT_ID = process.env.COZE_BOT_ID || '7577668337417879592';
-    const WORKFLOW_ID = process.env.COZE_WORKFLOW_ID || '7577668574502191104';
+    const BOT_ID = process.env.COZE_BOT_ID || '7578805227093442595';
+    const USER_ID = process.env.COZE_USER_ID || 'RootUser_2102399258';
 
     const res = await fetch(COZE_API_URL, {
       method: 'POST',
@@ -39,8 +39,7 @@ exports.handler = async (event) => {
       },
       body: JSON.stringify({
         bot_id: BOT_ID,
-        workflow_id: WORKFLOW_ID,
-        user_id: 'user_' + Date.now(),
+        user_id: USER_ID,
         stream: true,
         additional_messages: [
           { content_type: 'text', role: 'user', type: 'question', content: message },

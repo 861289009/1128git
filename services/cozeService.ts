@@ -13,8 +13,9 @@ const AUTH_TOKEN = RAW_AUTH_TOKEN
   .replace(/^Authorization:\s*Bearer\s*/i, '')
   .replace(/^Bearer\s*/i, '')
   .trim();
-const BOT_ID = ((import.meta as any)?.env?.VITE_COZE_BOT_ID || '7577668337417879592');
-const WORKFLOW_ID = ((import.meta as any)?.env?.VITE_COZE_WORKFLOW_ID || '7577668574502191104');
+const BOT_ID = ((import.meta as any)?.env?.VITE_COZE_BOT_ID || '7578805227093442595');
+// Official requirement: fixed user id provided by you
+const USER_ID = ((import.meta as any)?.env?.VITE_COZE_USER_ID || 'RootUser_2102399258');
 
 export interface CozeMessage {
   role: string;
@@ -57,8 +58,7 @@ export const streamCozeResponse = async (
       },
       body: JSON.stringify({
         bot_id: BOT_ID,
-        workflow_id: WORKFLOW_ID,
-        user_id: 'user_' + Date.now(), // Unique session ID
+        user_id: USER_ID,
         stream: true,
         additional_messages: [
           {
