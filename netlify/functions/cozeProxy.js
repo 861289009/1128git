@@ -41,7 +41,7 @@ exports.handler = async (event) => {
         bot_id: BOT_ID,
         workflow_id: WORKFLOW_ID,
         user_id: 'user_' + Date.now(),
-        stream: false,
+        stream: true,
         additional_messages: [
           { content_type: 'text', role: 'user', type: 'question', content: message },
         ],
@@ -58,18 +58,22 @@ exports.handler = async (event) => {
       };
     }
 
-    // Try parse JSON to extract content; if unknown, return raw text
+    // Parse SSE: extract last 'answer' content
     let content = '';
-    try {
-      const data = JSON.parse(text);
-      // Attempt common shapes
-      if (data && data.content) content = data.content;
-      else if (Array.isArray(data.messages)) {
-        const ans = data.messages.find(m => m.role === 'assistant' && m.content);
-        content = ans?.content || '';
+    const lines = text.split('\n');
+    for (const line of lines) {
+      if (line.trim().startsWith('data:')) {
+        const jsonStr = line.replace('data:', '').trim();
+        if (!jsonStr) continue;
+        try {
+          const data = JSON.parse(jsonStr);
+          if (data && data.type === 'answer' && typeof data.content === 'string') {
+            content = data.content; // use latest full content
+          }
+        } catch (_) {
+          // ignore parse errors for non-JSON keep-alive lines
+        }
       }
-    } catch (_) {
-      // not JSON, keep raw
     }
 
     return {

@@ -89,6 +89,11 @@ const AIChat: React.FC<AIChatProps> = ({
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const chatContainerRef = useRef<HTMLDivElement>(null);
+  // Typewriter refs for streaming/aggregated answers
+  const typingTimerRef = useRef<number | null>(null);
+  const typingTargetRef = useRef<string>('');
+  const typingCurrentRef = useRef<string>('');
+  const typingDoneRef = useRef<boolean>(false);
 
   const scrollToBottom = () => {
     if (chatContainerRef.current) {
@@ -125,21 +130,54 @@ const AIChat: React.FC<AIChatProps> = ({
     // Add initial empty model message
     setMessages(prev => [...prev, { role: 'model', text: '' }]);
 
-    await streamCozeResponse(
-      input,
-      (chunk) => {
+    // Reset typing state for new answer
+    if (typingTimerRef.current !== null) {
+      window.clearInterval(typingTimerRef.current);
+      typingTimerRef.current = null;
+    }
+    typingTargetRef.current = '';
+    typingCurrentRef.current = '';
+    typingDoneRef.current = false;
+
+    const startTyping = () => {
+      if (typingTimerRef.current !== null) return;
+      typingTimerRef.current = window.setInterval(() => {
+        const target = typingTargetRef.current;
+        const current = typingCurrentRef.current;
+        if (current === target && typingDoneRef.current) {
+          if (typingTimerRef.current !== null) {
+            window.clearInterval(typingTimerRef.current);
+            typingTimerRef.current = null;
+          }
+          return;
+        }
+        const remaining = target.length - current.length;
+        if (remaining <= 0) return;
+        const step = Math.min(remaining, Math.max(1, Math.floor(target.length / 120)));
+        const next = target.slice(0, current.length + step);
+        typingCurrentRef.current = next;
         setMessages(prev => {
           const newMessages = [...prev];
           const lastMsg = newMessages[newMessages.length - 1];
           if (lastMsg.role === 'model') {
-            lastMsg.text = chunk;
+            lastMsg.text = next;
           }
           return newMessages;
         });
         scrollToBottom();
+      }, 20);
+    };
+
+    await streamCozeResponse(
+      input,
+      (chunk) => {
+        // Update typing target and start typewriter if needed
+        typingTargetRef.current = chunk || '';
+        startTyping();
       },
       () => {
         setIsLoading(false);
+        typingDoneRef.current = true;
         onFinishThinking?.();
       },
       (error) => {
@@ -152,6 +190,7 @@ const AIChat: React.FC<AIChatProps> = ({
           }
           return newMessages;
         });
+        typingDoneRef.current = true;
         setIsLoading(false);
         onFinishThinking?.();
       }
