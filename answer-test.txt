@@ -1,0 +1,272 @@
+﻿Testing Coze API for answer messages...
+
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 姝ｅ湪涓轰綘鎼滅储銆?  Full data: {
+  "id": "7577697863716257833",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "姝ｅ湪涓轰綘鎼滅储銆?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089",
+  "created_at": 1764320272,
+  "time_cost": {
+    "total_duration_ms": 977
+  }
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 姝ｅ湪涓轰綘鎼滅储銆?  Full data: {
+  "id": "7577697863716257833",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "姝ｅ湪涓轰綘鎼滅储銆?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089",
+  "created_at": 1764320272,
+  "time_cost": {
+    "total_duration_ms": 977
+  }
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 鎵ｅ瓙
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "鎵ｅ瓙",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 鏄柊涓€浠I搴旂敤寮€鍙戝钩鍙帮紝鐢卞瓧鑺?  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "鏄柊涓€浠I搴旂敤寮€鍙戝钩鍙帮紝鐢卞瓧鑺?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 璺冲姩寮€鍙戯紝鏃犺鏈夋棤缂栫▼鍩虹锛岄兘鑳藉湪涓婇潰蹇€熸惌寤?  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "璺冲姩寮€鍙戯紝鏃犺鏈夋棤缂栫▼鍩虹锛岄兘鑳藉湪涓婇潰蹇€熸惌寤?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 鍩轰簬澶фā鍨嬬殑鍚勭被鏅鸿兘浣撳苟鍙戝竷鍒板悇娓犻亾銆傚叾鏍稿績鎼缓
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "鍩轰簬澶фā鍨嬬殑鍚勭被鏅鸿兘浣撳苟鍙戝竷鍒板悇娓犻亾銆傚叾鏍稿績鎼缓",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 娴佺▼鍖呮嫭缂栧啓浜鸿涓庡洖澶嶉€昏緫
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "娴佺▼鍖呮嫭缂栧啓浜鸿涓庡洖澶嶉€昏緫",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 銆佹坊鍔犳彃浠跺拰宸ヤ綔娴併€佹坊鍔犵煡璇嗗簱銆佹坊鍔?  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "銆佹坊鍔犳彃浠跺拰宸ヤ綔娴併€佹坊鍔犵煡璇嗗簱銆佹坊鍔?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 璁板綍鐢ㄦ埛淇℃伅鑳藉姏銆佹坊鍔犻珮绾у姛鑳姐€佽皟璇曢瑙?  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "璁板綍鐢ㄦ埛淇℃伅鑳藉姏銆佹坊鍔犻珮绾у姛鑳姐€佽皟璇曢瑙?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 鍙婂彂甯冦€傚彂甯冨悗锛岀敤鎴峰彲鍙戞枃鏈秷鎭垨涓婁紶鏂囦欢浣跨敤
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "鍙婂彂甯冦€傚彂甯冨悗锛岀敤鎴峰彲鍙戞枃鏈秷鎭垨涓婁紶鏂囦欢浣跨敤",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: Bot銆?鐩稿叧鏂囨。閾炬帴
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "Bot銆俓n鐩稿叧鏂囨。閾炬帴",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 锛歔娆㈣繋鏉ュ埌鎵ｅ瓙](https://www.coze.cn/docs/
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "锛歔娆㈣繋鏉ュ埌鎵ｅ瓙](https://www.coze.cn/docs/",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089"
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: guides/welcome) 銆?
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "guides/welcome) 銆?",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089",
+  "created_at": 1764320283,
+  "time_cost": {
+    "total_duration_ms": 11674
+  }
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 鎵ｅ瓙鏄柊涓€浠I搴旂敤寮€鍙戝钩鍙帮紝鐢卞瓧鑺傝烦鍔ㄥ紑鍙戯紝鏃犺鏈夋棤缂栫▼鍩虹锛岄兘鑳藉湪涓婇潰蹇€熸惌寤哄熀浜庡ぇ妯″瀷鐨勫悇绫绘櫤鑳戒綋骞跺彂甯冨埌鍚勬笭閬撱€傚叾鏍稿績鎼缓娴佺▼鍖呮嫭缂栧啓浜鸿涓庡洖澶嶉€昏緫銆佹坊鍔犳彃浠跺拰宸ヤ綔娴併€佹坊鍔犵煡璇嗗簱銆佹坊鍔犺褰曠敤鎴蜂俊鎭兘鍔涖€佹坊鍔犻珮绾у姛鑳姐€佽皟璇曢瑙堝強鍙戝竷銆傚彂甯冨悗锛岀敤鎴峰彲鍙戞枃鏈秷鎭垨涓婁紶鏂囦欢浣跨敤Bot銆?鐩稿叧鏂囨。閾炬帴锛歔娆㈣繋鏉ュ埌鎵ｅ瓙](https://www.coze.cn/docs/guides/welcome) 銆?
+  Full data: {
+  "id": "7577697900550570003",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "鎵ｅ瓙鏄柊涓€浠I搴旂敤寮€鍙戝钩鍙帮紝鐢卞瓧鑺傝烦鍔ㄥ紑鍙戯紝鏃犺鏈夋棤缂栫▼鍩虹锛岄兘鑳藉湪涓婇潰蹇€熸惌寤哄熀浜庡ぇ妯″瀷鐨勫悇绫绘櫤鑳戒綋骞跺彂甯冨埌鍚勬笭閬撱€傚叾鏍稿績鎼缓娴佺▼鍖呮嫭缂栧啓浜鸿涓庡洖澶嶉€昏緫銆佹坊鍔犳彃浠跺拰宸ヤ綔娴併€佹坊鍔犵煡璇嗗簱銆佹坊鍔犺褰曠敤鎴蜂俊鎭兘鍔涖€佹坊鍔犻珮绾у姛鑳姐€佽皟璇曢瑙堝強鍙戝竷銆傚彂甯冨悗锛岀敤鎴峰彲鍙戞枃鏈秷鎭垨涓婁紶鏂囦欢浣跨敤Bot銆俓n鐩稿叧鏂囨。閾炬帴锛歔娆㈣繋鏉ュ埌鎵ｅ瓙](https://www.coze.cn/docs/guides/welcome) 銆?",
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089",
+  "created_at": 1764320283,
+  "time_cost": {
+    "total_duration_ms": 11674
+  }
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 椋炰功澶氱淮琛ㄦ牸(open.feishu.cn)闇€瑕佹巿鏉冧娇鐢ㄣ€傛巿鏉冨悗鍗充唬琛ㄤ綘鍚屾剰涓庢墸瀛愪腑浣犳墍閫夋嫨鐨凙I妯″瀷鍒嗕韩鏁版嵁銆傝[鐐瑰嚮杩欓噷](https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=https%3A%2F%2Fwww.coze.cn%2Fapi%2Fplugin_oauth%2F7389226436802019368%2Fauthorization_code&app_id=cli_a5d6e52ba83c100c&state=22gRs4NQv0Ck4Hydv2hWsjFYMK7qNZYBJp29hRW1NPo8XGQCROQ7dEBIQMpDmLeBr-lFED_yiHpVXhlg60ETPxh_2EzoInHD6MnC_0PL-famOUwKmyY5YSEXb8FwEiLFfIXXxNfKSfmThcI8MsrIz8BRUSALmEu7SNJTj3NljcGBOnrMEh9hFVVkHmgJGzDmgIPwYvtrwnTSzCULo8bB-3yXhOIacJgcYMRae7i632tqqRGp97s9vPDDBmUqAf4p3qPMS28aArboCSCd2-N-Aw_R-nXzV5q_nJgJLOSjM-JJ-viizxxfPR7ssCtbG8gOv06dFTjnacJtA3jueGPSb2BGCkG_HogGH_cAHCMrs-lgJMILtZWn-2EwDGYfcHQLwKh5WIKz9Wt-FMloZO4LqUm9DpFfSE3VsB7ZR_pv8xs)杩涜鎺堟潈銆傚闇€鍙栨秷鎺堟潈锛屽彂閫? /cancel_oauth 鍗冲彲鍙栨秷鎵€鏈夊凡鎺堟潈鎻掍欢鐨勬巿鏉冦€?  Full data: {
+  "id": "7577697911859265572",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "椋炰功澶氱淮琛ㄦ牸(open.feishu.cn)闇€瑕佹巿鏉冧娇鐢ㄣ€傛巿鏉冨悗鍗充唬琛ㄤ綘鍚屾剰涓庢墸瀛愪腑浣犳墍閫夋嫨鐨凙I妯″瀷鍒嗕韩鏁版嵁銆傝[鐐瑰嚮杩欓噷](https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=https%3A%2F%2Fwww.coze.cn%2Fapi%2Fplugin_oauth%2F7389226436802019368%2Fauthorization_code&app_id=cli_a5d6e52ba83c100c&state=22gRs4NQv0Ck4Hydv2hWsjFYMK7qNZYBJp29hRW1NPo8XGQCROQ7dEBIQMpDmLeBr-lFED_yiHpVXhlg60ETPxh_2EzoInHD6MnC_0PL-famOUwKmyY5YSEXb8FwEiLFfIXXxNfKSfmThcI8MsrIz8BRUSALmEu7SNJTj3NljcGBOnrMEh9hFVVkHmgJGzDmgIPwYvtrwnTSzCULo8bB-3yXhOIacJgcYMRae7i632tqqRGp97s9vPDDBmUqAf4p3qPMS28aArboCSCd2-N-Aw_R-nXzV5q_nJgJLOSjM-JJ-viizxxfPR7ssCtbG8gOv06dFTjnacJtA3jueGPSb2BGCkG_HogGH_cAHCMrs-lgJMILtZWn-2EwDGYfcHQLwKh5WIKz9Wt-FMloZO4LqUm9DpFfSE3VsB7ZR_pv8xs)杩涜鎺堟潈銆傚闇€鍙栨秷鎺堟潈锛屽彂閫? /cancel_oauth 鍗冲彲鍙栨秷鎵€鏈夊凡鎺堟潈鎻掍欢鐨勬巿鏉冦€?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089",
+  "created_at": 1764320283,
+  "time_cost": {
+    "total_duration_ms": 11857
+  }
+}
+
+馃摑 Answer Message Found:
+  Type: answer
+  Content: 椋炰功澶氱淮琛ㄦ牸(open.feishu.cn)闇€瑕佹巿鏉冧娇鐢ㄣ€傛巿鏉冨悗鍗充唬琛ㄤ綘鍚屾剰涓庢墸瀛愪腑浣犳墍閫夋嫨鐨凙I妯″瀷鍒嗕韩鏁版嵁銆傝[鐐瑰嚮杩欓噷](https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=https%3A%2F%2Fwww.coze.cn%2Fapi%2Fplugin_oauth%2F7389226436802019368%2Fauthorization_code&app_id=cli_a5d6e52ba83c100c&state=22gRs4NQv0Ck4Hydv2hWsjFYMK7qNZYBJp29hRW1NPo8XGQCROQ7dEBIQMpDmLeBr-lFED_yiHpVXhlg60ETPxh_2EzoInHD6MnC_0PL-famOUwKmyY5YSEXb8FwEiLFfIXXxNfKSfmThcI8MsrIz8BRUSALmEu7SNJTj3NljcGBOnrMEh9hFVVkHmgJGzDmgIPwYvtrwnTSzCULo8bB-3yXhOIacJgcYMRae7i632tqqRGp97s9vPDDBmUqAf4p3qPMS28aArboCSCd2-N-Aw_R-nXzV5q_nJgJLOSjM-JJ-viizxxfPR7ssCtbG8gOv06dFTjnacJtA3jueGPSb2BGCkG_HogGH_cAHCMrs-lgJMILtZWn-2EwDGYfcHQLwKh5WIKz9Wt-FMloZO4LqUm9DpFfSE3VsB7ZR_pv8xs)杩涜鎺堟潈銆傚闇€鍙栨秷鎺堟潈锛屽彂閫? /cancel_oauth 鍗冲彲鍙栨秷鎵€鏈夊凡鎺堟潈鎻掍欢鐨勬巿鏉冦€?  Full data: {
+  "id": "7577697911859265572",
+  "conversation_id": "7577697863715586089",
+  "bot_id": "7577668337417879592",
+  "role": "assistant",
+  "type": "answer",
+  "content": "椋炰功澶氱淮琛ㄦ牸(open.feishu.cn)闇€瑕佹巿鏉冧娇鐢ㄣ€傛巿鏉冨悗鍗充唬琛ㄤ綘鍚屾剰涓庢墸瀛愪腑浣犳墍閫夋嫨鐨凙I妯″瀷鍒嗕韩鏁版嵁銆傝[鐐瑰嚮杩欓噷](https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=https%3A%2F%2Fwww.coze.cn%2Fapi%2Fplugin_oauth%2F7389226436802019368%2Fauthorization_code&app_id=cli_a5d6e52ba83c100c&state=22gRs4NQv0Ck4Hydv2hWsjFYMK7qNZYBJp29hRW1NPo8XGQCROQ7dEBIQMpDmLeBr-lFED_yiHpVXhlg60ETPxh_2EzoInHD6MnC_0PL-famOUwKmyY5YSEXb8FwEiLFfIXXxNfKSfmThcI8MsrIz8BRUSALmEu7SNJTj3NljcGBOnrMEh9hFVVkHmgJGzDmgIPwYvtrwnTSzCULo8bB-3yXhOIacJgcYMRae7i632tqqRGp97s9vPDDBmUqAf4p3qPMS28aArboCSCd2-N-Aw_R-nXzV5q_nJgJLOSjM-JJ-viizxxfPR7ssCtbG8gOv06dFTjnacJtA3jueGPSb2BGCkG_HogGH_cAHCMrs-lgJMILtZWn-2EwDGYfcHQLwKh5WIKz9Wt-FMloZO4LqUm9DpFfSE3VsB7ZR_pv8xs)杩涜鎺堟潈銆傚闇€鍙栨秷鎺堟潈锛屽彂閫? /cancel_oauth 鍗冲彲鍙栨秷鎵€鏈夊凡鎺堟潈鎻掍欢鐨勬巿鏉冦€?,
+  "content_type": "text",
+  "chat_id": "7577697863715618857",
+  "section_id": "7577697863715586089",
+  "created_at": 1764320283,
+  "time_cost": {
+    "total_duration_ms": 11857
+  }
+}
+
+
+鉁?Total answer messages: 16
+
+馃搵 Summary of all answers:
+  1. 姝ｅ湪涓轰綘鎼滅储銆?  2. 姝ｅ湪涓轰綘鎼滅储銆?  3. 鎵ｅ瓙
+  4. 鏄柊涓€浠I搴旂敤寮€鍙戝钩鍙帮紝鐢卞瓧鑺?  5. 璺冲姩寮€鍙戯紝鏃犺鏈夋棤缂栫▼鍩虹锛岄兘鑳藉湪涓婇潰蹇€熸惌寤?  6. 鍩轰簬澶фā鍨嬬殑鍚勭被鏅鸿兘浣撳苟鍙戝竷鍒板悇娓犻亾銆傚叾鏍稿績鎼缓
+  7. 娴佺▼鍖呮嫭缂栧啓浜鸿涓庡洖澶嶉€昏緫
+  8. 銆佹坊鍔犳彃浠跺拰宸ヤ綔娴併€佹坊鍔犵煡璇嗗簱銆佹坊鍔?  9. 璁板綍鐢ㄦ埛淇℃伅鑳藉姏銆佹坊鍔犻珮绾у姛鑳姐€佽皟璇曢瑙?  10. 鍙婂彂甯冦€傚彂甯冨悗锛岀敤鎴峰彲鍙戞枃鏈秷鎭垨涓婁紶鏂囦欢浣跨敤
+  11. Bot銆?鐩稿叧鏂囨。閾炬帴
+  12. 锛歔娆㈣繋鏉ュ埌鎵ｅ瓙](https://www.coze.cn/docs/
+  13. guides/welcome) 銆?
+  14. 鎵ｅ瓙鏄柊涓€浠I搴旂敤寮€鍙戝钩鍙帮紝鐢卞瓧鑺傝烦鍔ㄥ紑鍙戯紝鏃犺鏈夋棤缂栫▼鍩虹锛岄兘鑳藉湪涓婇潰蹇€熸惌寤哄熀浜庡ぇ妯″瀷鐨勫悇绫绘櫤鑳戒綋骞跺彂甯冨埌鍚勬笭閬撱€傚叾鏍稿績鎼缓娴佺▼鍖呮嫭缂栧啓浜鸿涓庡洖澶嶉€昏緫銆佹坊鍔犳彃浠跺拰宸ヤ綔娴併€佹坊鍔犵煡璇嗗簱銆佹坊鍔犺褰曠敤鎴蜂俊鎭兘鍔涖€佹坊鍔犻珮绾у姛鑳姐€佽皟璇曢瑙堝強鍙戝竷銆傚彂甯冨悗锛岀敤鎴峰彲鍙戞枃鏈秷鎭垨涓婁紶鏂囦欢浣跨敤Bot銆?鐩稿叧鏂囨。閾炬帴锛歔娆㈣繋鏉ュ埌鎵ｅ瓙](https://www.coze.cn/docs/guides/welcome) 銆?
+  15. 椋炰功澶氱淮琛ㄦ牸(open.feishu.cn)闇€瑕佹巿鏉冧娇鐢ㄣ€傛巿鏉冨悗鍗充唬琛ㄤ綘鍚屾剰涓庢墸瀛愪腑浣犳墍閫夋嫨鐨凙I妯″瀷鍒嗕韩鏁版嵁銆傝[鐐瑰嚮杩欓噷](https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=https%3A%2F%2Fwww.coze.cn%2Fapi%2Fplugin_oauth%2F7389226436802019368%2Fauthorization_code&app_id=cli_a5d6e52ba83c100c&state=22gRs4NQv0Ck4Hydv2hWsjFYMK7qNZYBJp29hRW1NPo8XGQCROQ7dEBIQMpDmLeBr-lFED_yiHpVXhlg60ETPxh_2EzoInHD6MnC_0PL-famOUwKmyY5YSEXb8FwEiLFfIXXxNfKSfmThcI8MsrIz8BRUSALmEu7SNJTj3NljcGBOnrMEh9hFVVkHmgJGzDmgIPwYvtrwnTSzCULo8bB-3yXhOIacJgcYMRae7i632tqqRGp97s9vPDDBmUqAf4p3qPMS28aArboCSCd2-N-Aw_R-nXzV5q_nJgJLOSjM-JJ-viizxxfPR7ssCtbG8gOv06dFTjnacJtA3jueGPSb2BGCkG_HogGH_cAHCMrs-lgJMILtZWn-2EwDGYfcHQLwKh5WIKz9Wt-FMloZO4LqUm9DpFfSE3VsB7ZR_pv8xs)杩涜鎺堟潈銆傚闇€鍙栨秷鎺堟潈锛屽彂閫? /cancel_oauth 鍗冲彲鍙栨秷鎵€鏈夊凡鎺堟潈鎻掍欢鐨勬巿鏉冦€?  16. 椋炰功澶氱淮琛ㄦ牸(open.feishu.cn)闇€瑕佹巿鏉冧娇鐢ㄣ€傛巿鏉冨悗鍗充唬琛ㄤ綘鍚屾剰涓庢墸瀛愪腑浣犳墍閫夋嫨鐨凙I妯″瀷鍒嗕韩鏁版嵁銆傝[鐐瑰嚮杩欓噷](https://open.feishu.cn/open-apis/authen/v1/index?redirect_uri=https%3A%2F%2Fwww.coze.cn%2Fapi%2Fplugin_oauth%2F7389226436802019368%2Fauthorization_code&app_id=cli_a5d6e52ba83c100c&state=22gRs4NQv0Ck4Hydv2hWsjFYMK7qNZYBJp29hRW1NPo8XGQCROQ7dEBIQMpDmLeBr-lFED_yiHpVXhlg60ETPxh_2EzoInHD6MnC_0PL-famOUwKmyY5YSEXb8FwEiLFfIXXxNfKSfmThcI8MsrIz8BRUSALmEu7SNJTj3NljcGBOnrMEh9hFVVkHmgJGzDmgIPwYvtrwnTSzCULo8bB-3yXhOIacJgcYMRae7i632tqqRGp97s9vPDDBmUqAf4p3qPMS28aArboCSCd2-N-Aw_R-nXzV5q_nJgJLOSjM-JJ-viizxxfPR7ssCtbG8gOv06dFTjnacJtA3jueGPSb2BGCkG_HogGH_cAHCMrs-lgJMILtZWn-2EwDGYfcHQLwKh5WIKz9Wt-FMloZO4LqUm9DpFfSE3VsB7ZR_pv8xs)杩涜鎺堟潈銆傚闇€鍙栨秷鎺堟潈锛屽彂閫? /cancel_oauth 鍗冲彲鍙栨秷鎵€鏈夊凡鎺堟潈鎻掍欢鐨勬巿鏉冦€?

@@ -1,0 +1,32 @@
+﻿Testing Coze API...
+
+Response status: 200
+Response headers: {
+  'access-control-allow-credentials': 'false',
+  'access-control-allow-headers': 'Origin,Content-Type,Content-Length,Authorization,x-tt-env,x-use-ppe,x-use-boe,X-Coze-Connector-ID,X-Coze-Client-User-Agent,X-Coze-Resource-Entity,open-nginx',
+  'access-control-allow-methods': 'POST,GET,PUT,DELETE,OPTIONS',
+  'access-control-allow-origin': '*',
+  'access-control-expose-headers': 'x-tt-logid',
+  connection: 'keep-alive',
+  'content-encoding': 'br',
+  'content-type': 'application/json; charset=utf-8',
+  date: 'Fri, 28 Nov 2025 08:52:33 GMT',
+  server: 'volc-dcdn',
+  'server-timing': 'inner; dur=9, cdn-cache;desc=MISS, origin;dur=45, edge;dur=0',
+  'strict-transport-security': 'max-age=31536000; includeSubDomains',
+  'transfer-encoding': 'chunked',
+  vary: 'Accept-Encoding',
+  via: 'n144-007-113-146.bdct-container.Creative',
+  'x-dsa-origin-status': '200',
+  'x-dsa-trace-id': '17643199539bd460a2c8886db72ffe96fc2bb82f65',
+  'x-request-ip': '124.126.104.93',
+  'x-tt-logid': '20251128165233B4C8401CB10B310B1D10',
+  'x-tt-trace-host': '018ccdb61976fda6aa6b6dedb587da3d83ff5961f46d2762a84996fbea56d0595bfddd218a858bb53cdc2d0f6f30b63b873dca208b46627b38c6e5e96a1c38063565bf9174e7c4d68f51ca4bd6af6170321b98277e0f09a988f94bd8fc672ff6e4',
+  'x-tt-trace-id': '00-c9aa0288030101e304536b24b26c0000-c9aa0288030101e3-01',
+  'x-tt-trace-tag': 'id=5'
+}
+
+Streaming response:
+
+
+鉁?Test completed successfully!

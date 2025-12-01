@@ -1,0 +1,37 @@
+﻿Testing Coze API...
+
+Response status: 200
+Response headers: {
+  'access-control-allow-credentials': 'false',
+  'access-control-allow-headers': 'Origin,Content-Type,Content-Length,Authorization,x-tt-env,x-use-ppe,x-use-boe,X-Coze-Connector-ID,X-Coze-Client-User-Agent,X-Coze-Resource-Entity,open-nginx',
+  'access-control-allow-methods': 'POST,GET,PUT,DELETE,OPTIONS',
+  'access-control-allow-origin': '*',
+  'access-control-expose-headers': 'x-tt-logid',
+  connection: 'keep-alive',
+  'content-encoding': 'br',
+  'content-type': 'application/json; charset=utf-8',
+  date: 'Fri, 28 Nov 2025 08:53:43 GMT',
+  server: 'volc-dcdn',
+  'server-timing': 'inner; dur=11, cdn-cache;desc=MISS, origin;dur=43, edge;dur=0',
+  'strict-transport-security': 'max-age=31536000; includeSubDomains',
+  'transfer-encoding': 'chunked',
+  vary: 'Accept-Encoding',
+  via: 'n101-026-038-144.hdcu-container.Creative',
+  'x-dsa-origin-status': '200',
+  'x-dsa-trace-id': '17643200235f38b610f17f394d3a3390f1cf14fad4',
+  'x-request-ip': '114.251.196.98',
+  'x-tt-logid': '2025112816534399FB6F8129B73AB98E31',
+  'x-tt-trace-host': '01170037a3524edc45b053e04c7618ad09f4bc51a098bcff59933b01d5e0601cd0c482eb41a1e03d31330a2e7f351a8f9d3f25ae48ba9f48934128140f0431694df2ffbded8e2527245b8e7cc57abc975182b10e5613c8ad26827c951f031a1383cd37b68d88d02250ddfb2fad0c17cdb1',
+  'x-tt-trace-id': '00-c9ab16b5030104f0308ffc82a3690000-c9ab16b5030104f0-01',
+  'x-tt-trace-tag': 'id=5'
+}
+
+Streaming response:
+
+
+--- Chunk 1 (232 bytes) ---
+Raw: {"code":4101,"msg":"The token you entered is incorrect. Please double-check and try again. For more information, refer to https://coze.cn/docs/developer_guides/authentication","detail":{"logid":"20251
+
+Stream ended.
+
+鉁?Test completed successfully!
